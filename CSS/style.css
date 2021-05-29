@@ -1,0 +1,789 @@
+/* header */
+header{
+	height: 18%;
+	text-align: center;	
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.3em;
+}
+
+header h1{
+	font-size: 4.0em;
+}
+
+/* footer */
+footer{
+	height: 10%;
+	background-color: gray;
+	bottom: 0;
+	border-radius: 20px;
+	display: block;
+	text-align: center;
+}
+
+footer h3{
+	padding-top: 2%;
+}
+
+/* body */
+body{
+	background-color: rgb(121, 191, 219);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:focus{
+	outline:  none;
+}
+textarea:focus{
+	outline: none;
+}
+button:focus{
+	outline: none;
+}
+
+/* ---------- BARRE DE NAVIGATION ---------- */
+
+ul#menu{
+	height: 60px ;
+	margin: 0 ;
+	padding: 0 ;
+	background-color: rgb(92, 92, 92);
+	list-style: none;
+	border-radius: 20px;
+	position: relative;
+	z-index: 2;
+	top: 0;
+}
+
+ul#menu li
+{
+	float: left;
+	text-align: center ;	
+}
+
+ul#menu li a
+{
+	width: 190Px ;
+	line-height: 60px ;
+	font-size: 1.7em ;
+	font-weight: bold ;
+	letter-spacing: 1px ;
+	color: #fff ;
+	display: block ;
+	text-decoration: none ;
+	padding: 0px 5px;
+	outline: none; 
+}
+
+ul#menu li a:hover, ul#menu li#btn_deconnec button:hover {
+	background-color: rgb(122, 122, 122);
+	transform: scale(1.05);
+	font-size: 1.9em;
+	border-right: 2px solid rgb(0, 0, 0) ;
+	border-left: 2px solid rgb(0, 0, 0) ;
+	border-radius: 20px;
+	box-shadow: 1px 0px 5px 1px rgba(0, 0, 0, 1);
+
+  }
+
+ul#menu li#btn_connec, ul#menu li#btn_option {
+	float: right;
+}  
+
+ul#menu li#btn_admin a{
+	width: 280px;
+}
+
+ul#menu li#btn_connec a{
+	width: 220px;
+}
+
+ul#menu li#btn_deconnec button{
+	margin-left: 2%;
+	width: 260px;
+	color:white;
+	background-color: rgb(92, 92, 92);
+	border: none;
+	border-radius:20px;
+	line-height: 59px ;
+	font-size: 1.8em ;
+	font-weight: bold ;
+	letter-spacing: 1px ;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+ul#menu li#btn_compte a{
+	margin-top: 5%;
+	margin-left: 7%;
+	width: 230px;
+}
+
+.content {
+	padding: 0px;
+}
+  
+.sticky {
+	position: fixed;
+	top: 20;
+	width: 98.5%;	
+	z-index: 2;
+}
+
+ul#menu li#btn_option button{
+	width: 300px;
+	color:white;
+	background-color: rgb(92, 92, 92);
+	border: none;
+	border-radius:20px;
+	line-height: 59px ;
+	font-size: 1.8em ;
+	font-weight: bold ;
+	letter-spacing: 1px ;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	width: 18%;
+	top: 99%;
+	left: 81%;
+	background-color:  rgb(92, 92, 92);
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+  
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+.dropdown-content a:hover {
+	background-color: rgb(122, 122, 122);
+	border-radius: 15px;
+}
+  
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+
+
+/* ---------- PAGE DE CONNEXION ---------- */
+
+#login #register{
+	height:auto;
+	
+}
+
+.box_grande{
+	margin: 15px;
+	height: 7%;
+	width: 60%;
+	font-size: 1.5em;
+	padding: 2%;
+	border-radius: 20px;
+}
+
+.box_petite{
+	margin: 10px;
+	height: 7%;
+	width: 35%;
+	font-size: 1.5em;
+	padding: 2%;
+	border-radius: 20px;
+}
+
+.verif_mdp{
+	color: red;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#date_label{
+	font-size: 1.5em;
+	margin-right: 2%;
+}
+
+#register_date{
+	font-size: 1.5em;
+}
+
+.bouton_submit{
+	color:white;
+	background-color: rgb(122, 122, 122);
+	border-radius:15px;
+	padding: 2%;
+	margin: 4% auto;
+	display: block;
+	font-size: 1.5em;
+}
+
+.box_connec{
+	margin:5% 3%;
+	width: 43.6%;
+	height: auto;
+	float: left;	
+	text-align: center;
+	color: white;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+.titre_connec{
+	background-color: rgb(122, 122, 122);
+	padding: 2%;
+	margin: 5% 30%;
+	border-radius: 15px;	
+	font-size: 2.0em;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#wrong_user{
+	display: none;
+	color: red;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* ---------- NOUVEAU POST ---------- */
+
+#titre_newpost{
+	text-align: center;
+	color: white;
+	background-color:rgb(122, 122, 122);
+	border:4px solid rgb(63, 63, 63); 
+	padding: 5px;
+	border-radius: 15px;
+	margin: 40px 25% 30px 25%;
+	font-size: 3.0em;
+}
+
+#box_newpost{
+	margin:40px 8%;
+	padding: 20px;
+	height: auto;	
+	text-align: center;
+	color: white;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#box_newpost #box_titre{
+	text-align: center;
+	height: 8%;
+	width: 60%;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+	font-size: 1.6em;
+}
+
+#box_newpost .box_text{
+	margin: 4%;
+	padding: 1.5%;
+	border-radius: 10px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+	resize: none;
+	font-size: 1.6em;
+}
+
+input.file{
+	background-color: black;
+}
+
+.parent-div {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+}
+
+.parent-div input[type=file] {
+	left: 0;
+	top: 0;
+	opacity: 0;
+	position: absolute;
+	padding: 10%;
+}
+.btn-upload {
+	background-color: #fff;
+	border: 3px solid rgb(100, 100, 100);
+	color:  rgb(71, 71, 71);
+	padding: 10px 25px;
+	border-radius: 10px;
+	font-size: 2.0em;
+	font-weight: bold;
+}
+
+.parent-div:hover{
+	transform: scale(1.1);
+}
+
+#box_newpost .bouton_submit{
+	padding: 1%;
+	margin-top: 1%;
+}
+
+
+/* ---------- MENU / ADMINISTRATION ---------- */
+
+.menu_post{
+	margin: 5% 7%;
+	padding: 2% 3%;
+	width: 80%;
+	height: auto ;
+	background-color: #53caff;
+	color: white;
+	background-color: #53caff;
+	border: 3px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+.menu_post:hover{
+	transform: scale(1.1);
+}
+
+#menu_text{
+	margin: 20px 0px;
+	float: left;
+	width: 70%;
+	font-size: 2.5em;
+}
+
+p#menu_text{
+	font-weight: 500;
+	font-size: 1.6em;
+	color: black;
+	clear: both;
+}
+
+#menu_pseudo{
+	display: inline;	
+	font-size: 1.4em;
+}
+
+#menu_com{
+	display: inline;	
+	font-size: 1.6em;
+	margin: 0%;
+	padding: 5px;
+	text-align: center;
+	background-color: #7a7a7a7a;
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#menu_date{
+	float: right;
+	font-size: 1.4em;
+}		
+
+#croix{
+	height: 30px;
+	margin: 0px -20px;
+}
+
+#bouton_admin:hover{
+	transform: scale(1.5);
+}
+
+#bouton_admin{
+	float: right;
+	margin: 7px;
+	width: 30px;
+	border-radius: 30px;
+	background-color:#53cbff00;
+	border: none;
+}
+
+.img_post{
+	max-width: 30%;
+	max-height: 20em;
+	border-radius: 10px;
+	float: right;
+}
+
+span.clear { 
+	clear: both; 
+	display: block; 
+}
+
+#no_post{
+	font-size: 4em;
+	text-align: center;
+	margin: 10% 20% 30% 20%;
+}
+
+#menu_reherche{
+	text-align: center;
+	margin: 2% 0% 2% 36%;
+	width: 25%;
+	height: 6%;
+	font-size: 1.5em;
+	padding: 1%;
+	border-radius: 20px;
+	z-index: 1;
+	position: relative;
+}
+
+#bouton_search{
+	margin-left: -3%;
+	text-align: right;
+	border-radius:20px;
+	height: 6%;
+	width: 5%;
+	font-size: 1.5em;
+}
+
+#bouton_search:hover{
+	background-color: rgb(179, 179, 179);
+}
+
+
+
+/* ---------- PAGE DU POST ---------- */
+
+#box_post{
+	margin:0px 3%;
+	margin-top: 40px;
+	padding: 10px;
+	height: auto;	
+	text-align: center;
+	color: black;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#post_titre{
+	width: auto;
+	margin: 30px 15%;
+	padding: 10px 5px;
+	background-color: rgb(121, 191, 219);
+	border: 4px double rgb(92, 92, 92);
+	border-radius: 15px;
+	font-size: 3.0em;	
+}
+
+#post_contenu{
+	margin: 0% 3%;
+	margin-bottom: 5%;
+	padding: 5%;
+	font-size: 1.1em;
+	border-left: 3px solid rgb(92, 92, 92);
+	border-right: 3px solid rgb(92, 92, 92);
+	border-radius: 10px;
+	background-color: #53caff ;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+.post_detail{
+	font-size: 1.0em;
+}
+
+#img_plein_post{
+	max-width: 80%;
+	max-height: 600px;
+}
+
+#box_comment{
+	padding-top: 2%;
+	margin: 0% 10%;
+	margin-bottom: 10%;
+	width: 80%;
+	height: auto;
+	text-align: center;
+	border-left: 6px solid rgb(92, 92, 92);
+	border-right: 6px solid rgb(92, 92, 92);
+}
+
+#titre_comment{
+	background-color: rgb(122, 122, 122);
+	border-radius: 15px;
+	font-size: 2.5em;
+	padding: 15px;
+	width: 30%;
+	margin: 0% 33% 100px 33%;
+	border: 3px solid white;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+	color: white;
+}
+
+#bouton_comment{
+	margin: 7px;
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background-color:#53caff;
+	border: none;
+	border: 2px solid white;
+	margin-left: -70%;
+	margin-top: -220px;
+}
+
+#bouton_comment:hover {
+	transform: scale(1.2);
+}
+
+#new_comment{
+	display: none;
+	text-align: left;
+	margin: 10px 14%;
+	margin-bottom: 150px;
+	padding: 3px 2%;
+	height: auto;
+	width: 68%;
+	background-color: #53caff;
+	border: 4px solid white;
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+	color: #4c4c4c;
+}
+
+#text_new_comment{
+	width: 100%;
+	height: 150px;
+	font-size: 1.5em;
+	padding: 2%;
+	border-radius: 15px;
+	resize: none;
+}
+
+#btn_new_comment{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	padding-left: 2;
+	background-color:#53caff;
+	border: none;
+	border: 2px solid white;
+	margin-left: 96%;
+	margin-top: -50px;	
+}
+
+#btn_new_comment:hover{
+	transform: scale(1.2);
+}
+
+#comment{
+	text-align: left;
+	width: 100%;
+	height: auto ;
+	border-top: 4px  solid rgb(92, 92, 92);
+	border-bottom: 4px  solid rgb(92, 92, 92);
+	background-color: rgb(165, 164, 164);
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+#info_comment{
+	background-color: rgb(122, 122, 122);
+	border-right: 3px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 22%;
+	height: 160px;
+	margin-top: 0;
+	text-align: center;
+	color: white;
+
+}
+
+#info_comment h3{
+	margin: 0px;
+}
+
+#contenu_comment p{
+	display: inline;
+}
+
+#contenu_comment{
+	width: 76%;
+	font-size: 1.2em;
+	text-align: center;	
+	float: right;
+	margin: 1%;
+}
+
+
+
+/* ---------- PAGE DU COMPTE ---------- */
+
+.box_compte{
+	margin:4% 2%;
+	width: 43.6%;
+	height: auto;
+	float: left;	
+	text-align: center;
+	color: white;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+.box_compte_post{
+	margin:3.2% 0%;
+	width: 50%;
+	height: 110%;
+	float: left;	
+	text-align: center;
+	color: white;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+
+}
+
+.titre_compte{
+	background-color: rgb(122, 122, 122);
+	padding: 2%;
+	margin: 5% 15%;
+	border-radius: 15px;	
+	font-size: 2.0em;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#all_post_user{
+	overflow:scroll;
+	background-color: #38acdd;
+	height: 80%;
+	margin: 2%;
+	padding: 1%;
+	border: 0px solid white;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#child{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding-right: 15px;
+}
+
+#post_in_box{
+	margin:2% 2.5%;
+	width: 95%;
+	height: 50%;
+	float: left;	
+	text-align: center;
+	color: white;
+	background-color: #53caff;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#post_compte_text{
+	margin: 20px 0px;
+	float: left;
+	width: 70%;
+	font-size: 2.5em;
+}
+
+
+/* ---------- PAGE DE MODERATION ---------- */
+
+#box_moderation{
+	margin:40px 8%;
+	height: auto;	
+	color: white;
+	background-color: #38acdd;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	box-shadow: 4px 3px 10px 0px rgb(44, 44, 44);
+}
+
+#box_mode_user{
+	width: 92%;
+	padding: 0% 2%;
+	margin: 2%;
+	border: 2px solid rgb(63, 63, 63);
+	border-radius: 15px;
+	background-color: #53caff;
+}
+
+#box_mode_user h3{
+	color: black;
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-left: 4%;
+	display: inline-block;
+}
+
+#box_mode_user h3 a{
+	color: white;
+	font-weight: 400;
+}
+
+#little_button{
+	margin-top: 1%;
+}
+
+#additional_box{
+	display: none;
+	overflow:scroll;
+	background-color: #38acdd;
+	height: 40%;
+	margin: 2%;
+	padding: 1%;
+	border: 0px solid white;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+#box_mode_user:hover #additional_box {
+	display: block;
+}
+
+#box_mode_user i{
+	margin-left: 49%;
+	margin-bottom: 1%;
+}
+
+
+/* ---------- PAGE DE MODIFICATION ---------- */
+
+#btn_del_parent {
+	display: inline-block;
+	position: relative;	
+}
+
+#btn_del_parent:hover{
+	transform: scale(1.1);
+}	
+
+input[type=checkbox] {
+	transform: scaleY(5.5) scaleX(28.4);
+	
+}
+
+#btn_del_parent input[type=checkbox] {
+	left: 46.7%;
+	top: 34%;
+	opacity: 0;
+	position: absolute;
+}
+
+#fichier , #check{
+	display: none;
+	border: 2px solid black;
+	border-radius: 15px;
+	margin: 1% 35%;
+	padding: 5px 20px;
+	background-color: rgb(230, 230, 230);
+	color: black;
+}
